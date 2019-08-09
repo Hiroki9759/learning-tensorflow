@@ -10,12 +10,12 @@ test_y = test_data[:,-1]
 
 #Kerasの処理
 import tensorflow as tf 
-import tensorflow.contrib.keras as keras
-
+# import tensorflow.contrib.keras as keras
+import tensorflow.keras as keras
 Sequential = keras.models.Sequential
 Dense = keras.layers.Dense
 backend = keras.backend
-from tensorflow.contrib.keras import callbacks
+from tensorflow.keras import callbacks
 num_classes = 3
 train_y = keras.utils.to_categorical(train_y,num_classes)
 test_y = keras.utils.to_categorical(test_y,num_classes)
